@@ -1,0 +1,109 @@
+/*
+
+font-family: 'Dancing Script', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Petemoss', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Sacramento', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+
+*/
+html	{
+	scroll-behavior: smooth;
+}
+
+
+
+body	{
+	
+	font-family: 'Poppins', sans-serif;
+	background-image: url(https://images.pexels.com/photos/1106476/pexels-photo-1106476.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+li:hover {
+	background-color: #b4d6de;
+}	
+
+.navbar {
+	background-color: #189AB4;
+}
+.navbar-brand + {
+	font-family: 'Sacramento', cursive;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.navi	{
+	color: white !important;
+}
+
+
+/*=======================================================================*/
+
+/*intro*/
+
+#name {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+#intro {
+	height: 70%;
+	border: 2px solid blue;
+}
+
+#intro > .row {
+	vertical-align: top;
+	height: 50%;
+}
+
+#mypic {
+	/*max-height: 60%;
+	max-width: 60%;*/
+}
+
+
+/*#mypic > img {
+	max-height: 25%;
+	max-width: 25%;
+
+}*/
+
+
+
+
+/*=======================================================================*/
+
+
+#contact {
+	font-family: 'Poppins', sans-serif;
+	color: white;
+}
+
+#contact h3 {
+	background-color: #05445E;
+
+}
+
+#gmap {
+	height: 60vh;
+	width: 100%;
+}
+
+
+
+/* footer*/
+
+
+footer {
+	font-size: .7rem;
+	background-color: #05445E;
+}
+
+.fab {
+	font-size: 2rem;
+	color: white;
+}
