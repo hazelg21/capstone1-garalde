@@ -1,11 +1,7 @@
 /*
 
-font-family: 'Dancing Script', cursive;
+font-family: 'Lato', sans-serif;
 font-family: 'Lobster', cursive;
-font-family: 'Petemoss', cursive;
-font-family: 'Poppins', sans-serif;
-font-family: 'Sacramento', cursive;
-font-family: 'Source Sans Pro', sans-serif;
 
 */
 html	{
@@ -16,11 +12,20 @@ html	{
 
 body	{
 	
-	font-family: 'Poppins', sans-serif;
-	background-image: url(https://images.pexels.com/photos/1106476/pexels-photo-1106476.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+	font-family: 'Lato', sans-serif;
+	background-image: url(https://images.pexels.com/photos/3637943/pexels-photo-3637943.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+
+.bgdblue {
+	background-color: #003F7D;
+}
+
+.bgblue {
+	background-color: #0090d9;
 }
 
 li:hover {
@@ -28,12 +33,11 @@ li:hover {
 }	
 
 .navbar {
-	background-color: #189AB4;
+	font-size: 1.2rem;
 }
-.navbar-brand + {
-	font-family: 'Sacramento', cursive;
-	font-size: 2rem;
-	font-weight: bold;
+.navbar-brand  {
+	font-family: 'Lobster', cursive;
+	font-size: 1.8rem;
 }
 
 .navi	{
@@ -41,50 +45,104 @@ li:hover {
 }
 
 
+
+
+
 /*=======================================================================*/
 
 /*intro*/
 
-#name {
-	font-family: 'Source Sans Pro', sans-serif;
+#name h1 {
+	font-family: 'Lobster', cursive;
+	font-size: 9vh;
+	/*font-weight: 30vh;*/
+	color: #003F7D !important;
+	/*color: #24a6ea !important;*/
+	margin-bottom: 0;
+}	
+
+h2 {
+
+	color: #003F7D !important;
 }
 
+#name button {
+	color: white;
+	font-weight: bold;
+}
+
+#name #code {
+	color: #003F7D !important;
+}
+
+#name hr {
+	border: 1px solid black;
+}
+
+#name p {
+	font-weight: bold;
+}
 
 #intro {
 	height: 70%;
-	border: 2px solid blue;
-}
-
-#intro > .row {
-	vertical-align: top;
-	height: 50%;
-}
-
-#mypic {
-	/*max-height: 60%;
-	max-width: 60%;*/
 }
 
 
-/*#mypic > img {
-	max-height: 25%;
-	max-width: 25%;
+#projlist {
+	background-color: #fefffe;
+	background-color: rgb(0, 0, 0, 0.1);
+	
+}
 
-}*/
+#projlist > div > .projimg {
+	width: 50%;
+}
+
+#projlist h1 {
+	color: white !important;
+}
 
 
+
+/* slides **************** */
+
+.slides {
+	/*border: 1px solid black;*/
+	height: 70vh;
+}
+
+
+
+
+
+/* tools **************** */
+
+.maintool {
+	width: 50vw;
+}
+
+.imgtool {
+	min-width: 15vh;
+}
+
+
+.imgtool + p {
+	font-weight: bold;
+
+}
 
 
 /*=======================================================================*/
 
+/* contact **************** */
 
-#contact {
-	font-family: 'Poppins', sans-serif;
-	color: white;
+#contact label {
+	color: #003F7D;
+	font-weight: bold;
 }
 
-#contact h3 {
-	background-color: #05445E;
+#contact > div > div > h3 {
+	color: white !important;
 
 }
 
@@ -95,12 +153,17 @@ li:hover {
 
 
 
-/* footer*/
+
+
+/*=======================================================================*/
+
+
+
+/* footer *****************/
 
 
 footer {
 	font-size: .7rem;
-	background-color: #05445E;
 }
 
 .fab {
