@@ -76,7 +76,8 @@ h2 {
 }
 
 #name hr {
-	border: 1px solid black;
+	border: 1px solid black !important;
+  
 }
 
 #name p {
@@ -85,17 +86,14 @@ h2 {
 
 #intro {
 	height: 70%;
-
+	
 }
 
 
 #projlist {
 
-	background-color: #fefffe;
-	/*background-color: rgb(0, 0, 0, 0.1);*/
-	background-color: rgba(0, 0, 0,0.09);
-	font-weight: bold;
-	color: #003F7D !important;
+	background-color: rgba(0,0,0,0.55);
+	color: white !important;
 	
 }
 
@@ -107,12 +105,21 @@ h2 {
 	color: white !important;
 }
 
+#projlist hr {
+	border: 1px solid white !important;
+  
+}
 
+
+.bgtrans {
+	background-color: rgba(0,0,0,0.55) !important;
+	color: white !important;
+}
 
 /* slides **************** */
 
 .slides {
-	/*border: 1px solid black;*/
+
 	height: 70vh;
 }
 
