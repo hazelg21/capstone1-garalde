@@ -176,6 +176,10 @@ h2 {
 
 footer {
 	font-size: .7rem;
+	clear: both;
+    position: relative;
+    height: 120px;
+    margin-top: -200px;
 }
 
 .fab {
