@@ -1,6 +1,11 @@
 var sendBtn = document.getElementById('sendMsg')
 
-
+function clearFields() {
+    document.getElementById('text-name').value = '',
+    document.getElementById('text-email').value = '',
+    document.getElementById('text-number').value = '',
+    document.getElementById('text-textarea').value = ''
+}
 
 sendBtn.addEventListener('click', function(e) {
 	e.preventDefault()
@@ -16,5 +21,6 @@ sendBtn.addEventListener('click', function(e) {
                 msg: document.getElementById('text-textarea').value
             })
         })
+    .then(clearFields())
 	.then(alert("success"))
 })
