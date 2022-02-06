@@ -12,6 +12,7 @@ sendBtn.addEventListener('click', function(e) {
             body: JSON.stringify({
                 name: document.getElementById('text-name').value,
                 email: document.getElementById('text-email').value,
+                contactNo: document.getElementById('text-number').value,
                 msg: document.getElementById('text-textarea').value
             })
         })
