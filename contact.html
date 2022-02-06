@@ -20,6 +20,8 @@
 	<!-- external css -->
 	<link rel="stylesheet" type="text/css" href="./index.css">
 
+	<script type="text/javascript" defer src="./index.js"></script>
+
 	<title>Hazel Garalde | Contact Me</title>
 </head>
 <body >
@@ -62,7 +64,7 @@
 
 			<div class="col-md-6 my-4">
 				<h3 class="text-center my-2 p-2 rounded bgdblue">Contact Me</h3>
-				<form>
+				<form onSubmit="sendEmail()">
 					<div class="form-group">
 						<label for="text-name">Name:</label>
 						<input type="text" name="name" id="text-name" placeholder="Enter Full Name"class="form-control">
@@ -78,7 +80,7 @@
 						<textarea class="form-control" id="text-textarea" rows="3"></textarea>
 					</div>
 
-					<button type="send" class="btn btn-success btn-block rounded-pill">SEND MESSAGE</button>
+					<button type="submit" id="sendMsg"class="btn btn-success btn-block rounded-pill">SEND MESSAGE</button>
 					
 				</form>
 			</div>
