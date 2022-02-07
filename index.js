@@ -7,6 +7,11 @@ function clearFields() {
     document.getElementById('text-textarea').value = ''
 }
 
+function togglePopup() {
+    // document.getElementById("popup-1").classList.toggle.("active")
+    alert("success")
+}
+
 sendBtn.addEventListener('click', function(e) {
 	e.preventDefault()
     fetch('https://powerful-shelf-02321.herokuapp.com/api/portfolio/contactMe', {
@@ -22,5 +27,5 @@ sendBtn.addEventListener('click', function(e) {
             })
         })
     .then(clearFields())
-	.then(alert("success"))
+	.then(togglePopup())
 })
