@@ -8,8 +8,8 @@ function clearFields() {
 }
 
 function togglePopup() {
-    // document.getElementById("popup-1").classList.toggle.("active")
-    alert("success")
+    document.getElementById("popup-1").classList.toggle("active");
+    // alert("success")
 }
 
 sendBtn.addEventListener('click', function(e) {
