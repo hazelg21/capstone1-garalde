@@ -29,11 +29,15 @@ function sendMail(e) {
         if(feedback.status === 200){
             clearFields()
             togglePopup()
+             document.getElementById('sendMsg').innerHTML = 'SEND MESSAGE';
         }
         else {
             console.log("Unable to send email at the moment please try again")
+            document.getElementById('sendMsg').innerHTML = 'SEND MESSAGE';
         }
     })
+
+
   
 }
 
@@ -45,6 +49,7 @@ sendBtn.addEventListener('click', function(e) {
         document.getElementById('text-number').value !== '' &&
         document.getElementById('text-textarea').value !== ''){
 
+        document.getElementById('sendMsg').innerHTML = 'Sending...';
         sendMail(e)
     
     }
