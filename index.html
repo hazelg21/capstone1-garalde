@@ -224,21 +224,25 @@
 				<form onSubmit="sendEmail()">
 					<div class="form-group">
 						<label for="text-name">Name:</label>
+						<label class="reqValue" id="req-name">*</label>
 						<input type="text" name="name" id="text-name" placeholder="Enter Full Name"class="form-control">
 					</div>
 
 					<div class="form-group">
 						<label for="text-email">Email:</label>
+						<label class="reqValue" id="req-email">*</label>
 						<input type="Email" name="Email" id="text-email" placeholder="name@sample.com" class="form-control">
 					</div>
 
 					<div class="form-group">
 						<label for="text-number">Contact Number:</label>
+						<label class="reqValue" id="req-number">*</label>
 						<input type="number" name="contactNo" id="text-number" placeholder="09XXXXXXXXX" class="form-control">
 					</div>
 
 					<div class="form-group">
-						<label for="text-textarea">Message:</label>
+						<label for="text-textarea">Message:</label> 
+						<label class="reqValue" id="req-textarea">*</label>
 						<textarea class="form-control" id="text-textarea" rows="3"></textarea>
 					</div>
 
