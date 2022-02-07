@@ -25,16 +25,17 @@ function sendMail(e) {
                 msg: document.getElementById('text-textarea').value
             })
         })
-    .then(clearFields())
-    .then(togglePopup())
+    .then((feedback) => {
+        if(feedback.status === 200){
+            clearFields()
+            togglePopup()
+        }
+        else {
+            console.log("Unable to send email at the moment please try again")
+        }
+    })
+  
 }
-
-
-// sendBtn.addEventListener('click', function(e) {
-// 	sendMail(e)
-// })
-
-
 
 
 sendBtn.addEventListener('click', function(e) {
@@ -44,8 +45,7 @@ sendBtn.addEventListener('click', function(e) {
         document.getElementById('text-number').value !== '' &&
         document.getElementById('text-textarea').value !== ''){
 
-         console.log("sending...")
-         sendMail(e)
+        sendMail(e)
     
     }
     else if (document.getElementById('text-name').value === '') {
