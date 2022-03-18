@@ -1,345 +1,467 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <head>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
 
+    <!-- responsive meta tag -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-	<!-- responsive meta tag -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- fontawesome kitcode -->
+    <script
+      src="https://kit.fontawesome.com/01c658f330.js"
+      crossorigin="anonymous"
+    ></script>
 
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
 
-	<!-- fontawesome kitcode -->
-	<script src="https://kit.fontawesome.com/01c658f330.js" crossorigin="anonymous"></script>
+    <!-- external css -->
+    <link rel="stylesheet" type="text/css" href="./index.css" />
 
-	<!-- google fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap" rel="stylesheet">
+    <title>Hazel Garalde</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bgblue">
+      <a class="navbar-brand ml-3" href="#intro">Hazel Garalde</a>
+      <!-- <a class="navbar-brand ml-3" href="./index.html">Hazel Garalde</a> -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#sample-nav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="sample-nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#intro" class="nav-link mx-2 navi">Home</a>
+            <!-- <a href="./index.html" class="nav-link mx-2 navi">Home</a> -->
+          </li>
+          <li>
+            <a href="#projlist" class="nav-link mx-2 navi">Projects</a>
+            <!-- <a href="./projects.html" class="nav-link mx-2 navi">Projects</a> -->
+          </li>
+          <li>
+            <a href="#myTools" class="nav-link mx-2 navi">Tools</a>
+            <!-- <a href="./tools.html" class="nav-link mx-2 navi">Tools</a> -->
+          </li>
+          <li>
+            <a href="#contact" class="nav-link mx-2 navi">Contact</a>
+            <!-- <a href="./contact.html" class="nav-link mx-2 navi">Contact</a> -->
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- navbar -->
 
-	<!-- external css -->
-	<link rel="stylesheet" type="text/css" href="./index.css">
+    <!-- start of intro -->
+    <div class="container my-4" id="intro">
+      <div class="row">
+        <div class="col-md-6 my-4 pt-4 order-2 order-md-1" id="name">
+          <h1>hi, i'm hazel!</h1>
+          <hr />
+          <h2>Full Stack Web Developer</h2>
+          <p class="mt-3 text-justify">
+            <strong id="code">I love coding! </strong> I have always been
+            passionate about coding. The intricate logic behind it mesmerizes
+            and encouragedme to learn more. I want to be a part of a company
+            where I can contribute my knowledge.
+          </p>
 
-	
+          <p class="mb-4">
+            Bring your vision to reality! Check out my works to see what we can
+            build!
+          </p>
+          <a href="#projlist"
+            ><button class="btn btn-block rounded-pill bgdblue">
+              SEE MY WORKS <i class="fas fa-arrow-right"></i></button
+          ></a>
+        </div>
+        <div class="col-md-6 my-4 px-5 order-1 order-md-2">
+          <div class="px-3" id="mypic">
+            <img
+              src="./images/hazel.jpg"
+              alt="Hazel Garalde"
+              class="img-fluid rounded-circle"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of intro -->
 
-	<title>Hazel Garalde</title>
-</head>
-<body >
-	<!-- navbar -->
-	<nav class="navbar navbar-expand-lg navbar-dark bgblue" >
-		<a class="navbar-brand ml-3" href="#intro">Hazel Garalde</a>
-		<!-- <a class="navbar-brand ml-3" href="./index.html">Hazel Garalde</a> -->
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sample-nav">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse justify-content-end" id="sample-nav">
-			<ul class="navbar-nav">
-				<li class="nav-item">
-					<a href="#intro" class="nav-link mx-2 navi">Home</a>
-					<!-- <a href="./index.html" class="nav-link mx-2 navi">Home</a> -->
-				</li>
-				<li> 
-					<a href="#projlist" class="nav-link mx-2 navi">Projects</a>
-					<!-- <a href="./projects.html" class="nav-link mx-2 navi">Projects</a> -->
-				</li>
-				<li> 
-					<a href="#myTools" class="nav-link mx-2 navi">Tools</a>
-					<!-- <a href="./tools.html" class="nav-link mx-2 navi">Tools</a> -->
-				</li>
-				<li> 
-					<a href="#contact" class="nav-link mx-2 navi">Contact</a>
-					<!-- <a href="./contact.html" class="nav-link mx-2 navi">Contact</a> -->
-				</li>
-			</ul>
-		</div>	
-	</nav>
-	<!-- navbar -->
+    <!-- start of projlist -->
+    <div class="container text-center mt-5 pt-1 pb-3 rounded" id="projlist">
+      <h1 class="m-5 py-2 rounded-pill bgdblue">Projects</h1>
+      <div class="row my-5 mx-auto" id="proj1">
+        <div class="col-12 col-md-6 px-5 order-2 order-md-1">
+          <h3 class="text-center mb-3">My Portfolio</h3>
+          <p class="text-justify">
+            This website! I have created this website using HTML, CSS, Bootstrap
+            and JavaScript. The design also allows mobile responsiveness!
+          </p>
+          <p class="text-justify">
+            I have also integrated GMAIL API for the contact page.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 px-5 order-1 order-md-2 projimg">
+          <img src="./images/projects/myportfolio.JPG" class="img-fluid" />
+        </div>
+      </div>
 
-	<!-- start of intro -->
-	<div class="container my-4" id="intro">
-		<div class="row">
-			<div class="col-md-6 my-4 pt-4 order-2 order-md-1" id="name">
-				<h1 >hi, i'm hazel!</h1>
-				<hr>
-				<h2>Full Stack Web Developer</h2>
-				<p class="mt-3  text-justify">
-					
-					<strong id="code">I love coding! </strong> I have always been passionate about coding. The intricate logic behind it mesmerizes and encouragedme to learn more. I want to be a part of a company where I can contribute my knowledge. 
-				</p>
-				
-				<p class="mb-4">
-					Bring your vision to reality! Check out my works to see what we can build!
-				</p>
-				<a href="./projects.html"><button class="btn btn-block rounded-pill bgdblue">SEE MY WORKS <i class="fas fa-arrow-right"></i></button></a>
-			</div>
-			<div class="col-md-6 my-4 px-5 order-1 order-md-2">
-				
-				<div class="px-3" id="mypic">
-					<img src="./images/hazel.jpg" alt="Hazel Garalde" class="img-fluid rounded-circle ">
-				</div>
-			</div>
-		</div>
-	</div>	
-	<!-- end of intro -->
+      <hr />
+      <div class="row my-5 mx-auto" id="proj2">
+        <div class="col-12 col-md-6 px-5 order-2">
+          <h3 class="text-center mb-3">Hermosa</h3>
+          <p class="text-justify">https://capstone3-vercel.vercel.app/</p>
+          <br />
+          <p class="text-justify">
+            <strong><i>Hermosa</i></strong> is an Ecommerce website for selling
+            hair products. This website was created using React, HTML, CSS and
+            Javascript for front-end. For back-end, I used MongoDB, NodeJS and
+            ExpressJS. I am still in the process of adding additional features,
+            updating the design and mobile responsiveness.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 px-5 order-1 projimg">
+          <a href="https://capstone3-vercel.vercel.app/" target="_blank">
+            <img src="./images/projects/hermosa.JPG" class="img-fluid"
+          /></a>
+        </div>
+      </div>
+      <div class="row my-5 mx-auto">
+        <div class="col-12 col-md-6 px-5 order-1">
+          <h5 class="mb-3">&#8212;Regular Account&#8212;</h5>
+          <ul class="functionList">
+            <li>Register</li>
+            <li>Login</li>
+            <li>View and Update Profile Information</li>
+            <li>Change Password</li>
+            <li>Search for products (returns active products only)</li>
+            <li>View all active products</li>
+            <li>View details of an active product</li>
+            <li>Add the product to Cart</li>
+            <li>View Cart content</li>
+            <li>Modify Quantity</li>
+            <li>Remove item from the Cart</li>
+            <li>Checkout Cart</li>
+            <li>View Order History and status of delivery</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 px-5 order-2">
+          <h5 class="mb-3">&#8212;Admin Account&#8212;</h5>
+          <ul class="functionList">
+            <li>Register</li>
+            <li>Login</li>
+            <li>View and Update Profile Information</li>
+            <li>Change Password</li>
+            <li>Search for a product (returns all products)</li>
+            <li>Add new product</li>
+            <li>View all products</li>
+            <li>Activate and Inactivate product</li>
+            <li>View and Update product information</li>
+            <li>
+              View all orders (can be filtered: All, Processed and Pending)
+            </li>
+            <li>Process a product</li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="row my-5 mx-auto" id="proj3">
+        <div class="col-12 col-md-6 px-5 order-2 order-md-1">
+          <h3 class="text-center mb-3">Third Project</h3>
+          <p class="text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 px-5 order-1 order-md-2 projimg">
+          <img
+            src="https://images.pexels.com/photos/5208871/pexels-photo-5208871.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- list of projects -->
 
-	<!-- start of projlist -->
-	<div class="container text-center mt-5 pt-1 pb-3 rounded" id="projlist">
-		<h1 class="m-5 py-2 rounded-pill bgdblue">Projects</h1>
-		<div class="row my-5 mx-auto" id="proj1">
-			<div class="col-12 col-md-6 px-5 order-2 order-md-1 ">
-				<h3 class="text-center mb-3">My Portfolio</h3>
-				<p class="text-justify">
-						This website! I have created this website using HTML, CSS, Bootstrap and JavaScript. The design also allows mobile responsiveness!
-				</p>
-				<p class="text-justify">I have also integrated GMAIL API for the contact page.</p>
-			</div>
-			<div class="col-12 col-md-6 px-5 order-1 order-md-2 projimg ">
-			<img src="./images/projects/myportfolio.JPG" class="img-fluid">
-			</div>
-		</div>
+    <!-- tools -->
+    <div id="myTools" class="container my-5 mx-auto">
+      <h1 class="text-center my-5">Tools I Use</h1>
+      <div class="d-flex flex-column align-items-center mx-4">
+        <div class="d-flex flex-row my-3 justify-content-around maintool">
+          <div class="text-center mx-2">
+            <img
+              src="./images/tools/logo-react.png"
+              alt="Javascript Logo"
+              class="img-fluid imgtool"
+            />
+            <p class="mt-2 mb-0">React</p>
+          </div>
+          <div class="text-center mx-2">
+            <img
+              src="./images/tools/logo-html5.png"
+              alt="HTML Logo"
+              class="img-fluid imgtool"
+            />
+            <p class="mt-2 mb-0">HTML</p>
+            <p></p>
+          </div>
 
-		<hr>
-		<div class="row my-5 mx-auto" id="proj2">
-			<div class="col-12 col-md-6 px-5 order-2">
-				<h3 class="text-center mb-3">Hermosa</h3>
-				<p class="text-justify">
-					https://capstone3-vercel.vercel.app/
-				</p>
-				<br>
-				<p class="text-justify">
-						<strong><i>Hermosa</i></strong> is an Ecommerce website for selling hair products. This website was created using React, HTML, CSS and Javascript for front-end. For back-end, I used MongoDB, NodeJS and ExpressJS. I am still in the process of adding additional features, updating the design and mobile responsiveness.
-				</p>
-			</div>
-			<div class="col-12 col-md-6 px-5 order-1 projimg">
-			<a href="https://capstone3-vercel.vercel.app/" target="_blank">
-			<img src="./images/projects/hermosa.JPG" class="img-fluid"></a>
-			</div>
-		</div>
-		<div class="row my-5 mx-auto">
-			<div class="col-12 col-md-6 px-5 order-1">
-				<h5 class="mb-3">&#8212;Regular Account&#8212;</h5>
-				<ul class="functionList">
-					<li>Register</li>
-					<li>Login</li>
-					<li>View and Update Profile Information</li>
-					<li>Change Password</li>
-					<li>Search for products (returns active products only)</li>
-					<li>View all active products</li>
-					<li>View details of an active product</li>
-					<li>Add the product to Cart</li>
-					<li>View Cart content</li>
-					<li>Modify Quantity</li>
-					<li>Remove item from the Cart</li>
-					<li>Checkout Cart</li>
-					<li>View Order History and status of delivery</li>
-				</ul>
-			</div>
-			<div class="col-12 col-md-6 px-5 order-2">
-				<h5 class="mb-3">&#8212;Admin Account&#8212;</h5>
-				<ul class="functionList">
-					<li>Register</li>
-					<li>Login</li>
-					<li>View and Update Profile Information</li>
-					<li>Change Password</li>
-					<li>Search for a product (returns all products)</li>
-					<li>Add new product</li>
-					<li>View all products</li>
-					<li>Activate and Inactivate product</li>
-					<li>View and Update product information</li>
-					<li>View all orders (can be filtered: All, Processed and Pending)</li>
-					<li>Process a product</li>
-				</ul>
-			</div>
-		</div>
-		<hr>
-	<!-- 	<div class="row my-5 mx-auto" id="proj3">
-			<div class="col-12 col-md-6 px-5 order-2 order-md-1 ">
-				<h3 class="text-center mb-3">Third Project</h3>
-				<p class="text-justify">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-			</div>
-			<div  class="col-12 col-md-6 px-5 order-1 order-md-2 projimg">
-			<img src="https://images.pexels.com/photos/5208871/pexels-photo-5208871.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" class="img-fluid">
-			</div>
-		</div> -->
+          <div class="text-center mx-2">
+            <img
+              src="./images/tools/logo-css3.png"
+              alt="CSS Logo"
+              class="img-fluid imgtool"
+            />
+            <p class="mt-2 mb-0">CSS</p>
+          </div>
+        </div>
+        <div class="d-flex flex-row my-3 justify-content-around maintool">
+          <div class="text-center mx-2">
+            <img
+              src="./images/tools/logo-nodejs.png"
+              alt="Git Logo"
+              class="img-fluid imgtool"
+            />
+            <p class="mt-2 mb-0">NodeJS</p>
+          </div>
+          <div class="text-center mx-2">
+            <img
+              src="./images/tools/logo-expressjs.png"
+              alt="Javascript Logo"
+              class="img-fluid imgtool"
+            />
+            <p class="mt-2 mb-0">ExpressJS</p>
+          </div>
+          <div class="text-center mx-2">
+            <img
+              src="./images/tools/logo-mongodb.png"
+              alt="Gitlab Logo"
+              class="img-fluid imgtool"
+            />
+            <p class="mt-2 mb-0">MongoDB</p>
+          </div>
+        </div>
+        <div class="d-flex flex-row my-3 justify-content-around maintool">
+          <div class="text-center mx-2">
+            <img
+              src="./images/tools/logo-git.png"
+              alt="Git Logo"
+              class="img-fluid imgtool"
+            />
+            <p class="mt-2 mb-0">Git</p>
+          </div>
+          <div class="text-center mx-2">
+            <img
+              src="./images/tools/logo-gitlab-ci-cd.png"
+              alt="Gitlab Logo"
+              class="img-fluid imgtool"
+            />
+            <p class="mt-2 mb-0">Gitlab</p>
+          </div>
+          <div class="text-center mx-2">
+            <img
+              src="./images/tools/logo-javascript.png"
+              alt="Javascript Logo"
+              class="img-fluid imgtool"
+            />
+            <p class="mt-2 mb-0">Javascript</p>
+          </div>
+        </div>
 
-	</div>
-	<!-- list of projects -->
+        <div class="d-flex flex-row my-3 justify-content-around maintool">
+          <div class="text-center mx-2">
+            <img
+              src="./images/tools/logo-postman.png"
+              alt="Git Logo"
+              class="img-fluid imgtool"
+            />
+            <p class="mt-2 mb-0">Postman</p>
+          </div>
+          <div class="text-center mx-2">
+            <img
+              src="./images/tools/logo-heroku.png"
+              alt="Javascript Logo"
+              class="img-fluid imgtool"
+            />
+            <p class="mt-2 mb-0">Heroku</p>
+          </div>
+          <div class="text-center mx-2">
+            <img
+              src="./images/tools/logo-bootstrap.png"
+              alt="Gitlab Logo"
+              class="img-fluid imgtool"
+            />
+            <p class="mt-2 mb-0">Bootstrap</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- tools -->
 
+    <!-- start of contact -->
+    <div class="container my-4" id="contact">
+      <div class="row">
+        <div class="col-md-6 my-4">
+          <h3 class="text-center my-2 p-2 rounded bgdblue">My Location</h3>
 
-	<!-- tools -->	
-	<div id="myTools"class="container my-5 mx-auto"> 
-		<h1 class="text-center my-5">Tools I Use</h1>
-		<div class="d-flex flex-column align-items-center mx-4"  > 
-			<div class="d-flex flex-row my-3 justify-content-around maintool">
-				<div class="text-center mx-2" >
-					<img src="./images/tools/logo-react.png"  alt="Javascript Logo" class="img-fluid imgtool" >
-					<p class="mt-2 mb-0">React</p>
-				</div>
-				<div class="text-center mx-2" >
-					<img src="./images/tools/logo-html5.png" alt="HTML Logo" class="img-fluid imgtool" >
-					<p class="mt-2 mb-0">HTML<p>
-				</div>
-				<div class="text-center mx-2" >
-					<img src="./images/tools/logo-css3.png" alt="CSS Logo" class="img-fluid imgtool" >
-					<p class="mt-2 mb-0">CSS</p>
-				</div>
-			</div>
-			<div class="d-flex flex-row my-3 justify-content-around maintool">
-				<div class="text-center mx-2" >
-					<img src="./images/tools/logo-nodejs.png" alt="Git Logo" class="img-fluid imgtool">
-					<p class="mt-2 mb-0">NodeJS</p>
-				</div>
-				<div class="text-center mx-2" >
-					<img src="./images/tools/logo-expressjs.png"  alt="Javascript Logo" class="img-fluid imgtool" >
-					<p class="mt-2 mb-0">ExpressJS</p>
-				</div>
-				<div class="text-center mx-2" >	
-					<img src="./images/tools/logo-mongodb.png" alt="Gitlab Logo" class="img-fluid imgtool">
-					<p class="mt-2 mb-0">MongoDB</p>
-				</div>
-			</div>
-			<div class="d-flex flex-row my-3 justify-content-around maintool">
-				<div class="text-center mx-2" >
-					<img src="./images/tools/logo-git.png" alt="Git Logo" class="img-fluid imgtool">
-					<p class="mt-2 mb-0">Git</p>
-				</div>
-				<div class="text-center mx-2" >	
-					<img src="./images/tools/logo-gitlab-ci-cd.png" alt="Gitlab Logo" class="img-fluid imgtool">
-					<p class="mt-2 mb-0">Gitlab</p>
-				</div>
-				<div class="text-center mx-2" >
-					<img src="./images/tools/logo-javascript.png"  alt="Javascript Logo" class="img-fluid imgtool" >
-					<p class="mt-2 mb-0">Javascript</p>
-				</div>
-			</div>
+          <iframe
+            id="gmap"
+            src="https://maps.google.com/maps?q=sm%20taytay&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe>
+        </div>
 
-			<div class="d-flex flex-row my-3 justify-content-around maintool">
-				<div class="text-center mx-2" >
-					<img src="./images/tools/logo-postman.png" alt="Git Logo" class="img-fluid imgtool">
-					<p class="mt-2 mb-0">Postman</p>
-				</div>
-				<div class="text-center mx-2" >
-					<img src="./images/tools/logo-heroku.png"  alt="Javascript Logo" class="img-fluid imgtool" >
-					<p class="mt-2 mb-0">Heroku</p>
-				</div>
-				<div class="text-center mx-2" >	
-					<img src="./images/tools/logo-bootstrap.png" alt="Gitlab Logo" class="img-fluid imgtool">
-					<p class="mt-2 mb-0">Bootstrap</p>
-				</div>
-			</div>
-		</div> 
-	</div>
-	<!-- tools -->	
+        <div class="col-md-6 my-4">
+          <h3 class="text-center my-2 p-2 rounded bgdblue">Contact Me</h3>
+          <form onSubmit="sendEmail()">
+            <div class="form-group">
+              <label for="text-name">Name:</label>
+              <label class="reqValue" id="req-name">*</label>
+              <input
+                type="text"
+                name="name"
+                id="text-name"
+                placeholder="Enter Full Name"
+                class="form-control"
+              />
+            </div>
 
+            <div class="form-group">
+              <label for="text-email">Email:</label>
+              <label class="reqValue" id="req-email">*</label>
+              <input
+                type="Email"
+                name="Email"
+                id="text-email"
+                placeholder="name@sample.com"
+                class="form-control"
+              />
+            </div>
 
-	<!-- start of contact -->
-	<div class="container my-4" id="contact">
-		
-		<div class="row">
-			<div class="col-md-6 my-4">
-				<h3 class="text-center my-2 p-2 rounded bgdblue">My Location</h3>
+            <div class="form-group">
+              <label for="text-number">Contact Number:</label>
+              <label class="reqValue" id="req-number">*</label>
+              <input
+                type="number"
+                name="contactNo"
+                id="text-number"
+                placeholder="09XXXXXXXXX"
+                class="form-control"
+              />
+            </div>
 
-				<iframe id="gmap" src="https://maps.google.com/maps?q=sm%20taytay&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" ></iframe>
+            <div class="form-group">
+              <label for="text-textarea">Message:</label>
+              <label class="reqValue" id="req-textarea">*</label>
+              <textarea
+                class="form-control"
+                id="text-textarea"
+                rows="3"
+              ></textarea>
+            </div>
 
-			</div>
+            <button
+              type="submit"
+              id="sendMsg"
+              class="btn btn-success btn-block rounded-pill"
+            >
+              SEND MESSAGE
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- end of contact -->
 
-			<div class="col-md-6 my-4">
-				<h3 class="text-center my-2 p-2 rounded bgdblue">Contact Me</h3>
-				<form onSubmit="sendEmail()">
-					<div class="form-group">
-						<label for="text-name">Name:</label>
-						<label class="reqValue" id="req-name">*</label>
-						<input type="text" name="name" id="text-name" placeholder="Enter Full Name"class="form-control">
-					</div>
+    <!-- start of popup -->
+    <div class="popup" id="popup-1">
+      <div class="overlay"></div>
+      <div class="content col-12 col-md-6 px-5">
+        <div class="close-btn" onclick="togglePopup()">&times;</div>
+        <br />
+        <h1>Email sent!</h1>
+        <p>I will be sending a feedback within the week.</p>
+        <p>Thank you!</p>
+      </div>
+    </div>
+    <!-- end of popup -->
 
-					<div class="form-group">
-						<label for="text-email">Email:</label>
-						<label class="reqValue" id="req-email">*</label>
-						<input type="Email" name="Email" id="text-email" placeholder="name@sample.com" class="form-control">
-					</div>
+    <!-- footer -->
+    <footer class="p-3 mt-2 bgblue">
+      <p class="text-center text-white">
+        hlgaralde@gmail.com&nbsp;&nbsp;|&nbsp;&nbsp;09999835248
+      </p>
+      <p class="text-center text-white m-2">
+        Designed and Created by Hazel Garalde
+      </p>
 
-					<div class="form-group">
-						<label for="text-number">Contact Number:</label>
-						<label class="reqValue" id="req-number">*</label>
-						<input type="number" name="contactNo" id="text-number" placeholder="09XXXXXXXXX" class="form-control">
-					</div>
+      <p class="text-center text-white">&copy;All Rights Reserved 2022</p>
 
-					<div class="form-group">
-						<label for="text-textarea">Message:</label> 
-						<label class="reqValue" id="req-textarea">*</label>
-						<textarea class="form-control" id="text-textarea" rows="3"></textarea>
-					</div>
+      <div class="d-flex justify-content-center">
+        <a
+          href="https://www.facebook.com/hazelgaralde"
+          target="_blank"
+          class="mx-3"
+        >
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://gitlab.com/hazelg21" target="_blank" class="mx-3">
+          <i class="fab fa-gitlab"></i>
+        </a>
+        <a href="https://github.com/hazelg21" target="_blank" class="mx-3">
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/hazelgaralde/"
+          target="_blank"
+          class="mx-3"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </footer>
+    <!-- footer -->
 
-					<button type="submit" id="sendMsg" class="btn btn-success btn-block rounded-pill">SEND MESSAGE</button>
-					
-				</form>
-			</div>
-		</div>
-	</div>	
-	<!-- end of contact -->
+    <!-- js dependencies -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+    <!-- js dependencies -->
 
-
-	<!-- start of popup -->	
-	<div class="popup" id="popup-1">
-		<div class="overlay"></div>
-		<div class="content col-12 col-md-6 px-5">
-			<div class="close-btn" onclick="togglePopup()">&times;</div>
-			<br>
-			<h1>Email sent!</h1>
-			<p>I will be sending a feedback within the week.</p>
-			<p>Thank you!</p>
-		</div>
-		
-	</div>
-	<!-- end of popup -->
-
-
-
-	<!-- footer -->
-	<footer class="p-3 mt-2 bgblue">
-		<p class="text-center text-white">
-			hlgaralde@gmail.com&nbsp;&nbsp;|&nbsp;&nbsp;09999835248
-		</p>
-		<p class="text-center text-white m-2">
-			Designed and Created by Hazel Garalde
-		</p>
-
-		<p class="text-center text-white">
-			&copy;All Rights Reserved 2022
-		</p>
-
-		<div class="d-flex justify-content-center">
-			<a href="https://www.facebook.com/hazelgaralde" target="_blank" class="mx-3">
-				<i class="fab fa-facebook"></i>
-			</a>
-			<a href="https://gitlab.com/hazelg21" target="_blank" class="mx-3">
-				<i class="fab fa-gitlab"></i>
-			</a>
-			<a href="https://github.com/hazelg21" target="_blank" class="mx-3">
-				<i class="fab fa-github"></i>
-			</a>
-			<a href="https://www.linkedin.com/in/hazelgaralde/" target="_blank" class="mx-3">
-				<i class="fab fa-linkedin"></i>
-			</a>
-		</div>
-	</footer>
-	<!-- footer -->
-
-
-	<!-- js dependencies -->
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-	<!-- js dependencies -->
-
-	<script type="text/javascript" src="./index.js"></script>
-
-
-</body>
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
 </html>
