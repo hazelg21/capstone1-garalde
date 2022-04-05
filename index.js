@@ -2,9 +2,9 @@ var sendBtn = document.getElementById('sendMsg')
 
 function clearFields() {
     document.getElementById('text-name').value = '',
-    document.getElementById('text-email').value = '',
-    document.getElementById('text-number').value = '',
-    document.getElementById('text-textarea').value = ''
+        document.getElementById('text-email').value = '',
+        document.getElementById('text-number').value = '',
+        document.getElementById('text-textarea').value = ''
 }
 
 function togglePopup() {
@@ -13,45 +13,45 @@ function togglePopup() {
 
 function sendMail(e) {
     e.preventDefault()
-    fetch('https://powerful-shelf-02321.herokuapp.com/api/portfolio/contactMe', {
-            method: 'POST',
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                name: document.getElementById('text-name').value,
-                email: document.getElementById('text-email').value,
-                contactNo: document.getElementById('text-number').value,
-                msg: document.getElementById('text-textarea').value
-            })
+    fetch('https://powerful-shelf-02321.herokuapp.com/api/portfolio/sendEmail', {
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            name: document.getElementById('text-name').value,
+            email: document.getElementById('text-email').value,
+            contactNo: document.getElementById('text-number').value,
+            msg: document.getElementById('text-textarea').value
         })
-    .then((feedback) => {
-        if(feedback.status === 200){
-            clearFields()
-            togglePopup()
-             document.getElementById('sendMsg').innerHTML = 'SEND MESSAGE';
-        }
-        else {
-            console.log("Unable to send email at the moment please try again")
-            document.getElementById('sendMsg').innerHTML = 'SEND MESSAGE';
-        }
     })
+        .then((feedback) => {
+            if (feedback.status === 200) {
+                clearFields()
+                togglePopup()
+                document.getElementById('sendMsg').innerHTML = 'SEND MESSAGE';
+            }
+            else {
+                console.log("Unable to send email at the moment please try again")
+                document.getElementById('sendMsg').innerHTML = 'SEND MESSAGE';
+            }
+        })
 
 
-  
+
 }
 
 
-sendBtn.addEventListener('click', function(e) {
+sendBtn.addEventListener('click', function (e) {
     e.preventDefault()
-    if (document.getElementById('text-name').value !== '' && 
+    if (document.getElementById('text-name').value !== '' &&
         document.getElementById('text-email').value !== '' &&
         document.getElementById('text-number').value !== '' &&
-        document.getElementById('text-textarea').value !== ''){
+        document.getElementById('text-textarea').value !== '') {
 
         document.getElementById('sendMsg').innerHTML = 'Sending...';
         sendMail(e)
-    
+
     }
     else if (document.getElementById('text-name').value === '') {
         document.getElementById('req-name').innerHTML = 'required';
@@ -69,24 +69,24 @@ sendBtn.addEventListener('click', function(e) {
 
 
 
-document.getElementById('text-name').addEventListener('keyup', function(e) {
+document.getElementById('text-name').addEventListener('keyup', function (e) {
     e.preventDefault()
     document.getElementById('req-name').innerHTML = '*';
 })
 
-document.getElementById('text-email').addEventListener('keyup', function(e) {
+document.getElementById('text-email').addEventListener('keyup', function (e) {
     e.preventDefault()
     document.getElementById('req-email').innerHTML = '*';
 })
 
 
-document.getElementById('text-number').addEventListener('keyup', function(e) {
+document.getElementById('text-number').addEventListener('keyup', function (e) {
     e.preventDefault()
     document.getElementById('req-number').innerHTML = '*';
 })
 
 
-document.getElementById('text-textarea').addEventListener('keyup', function(e) {
+document.getElementById('text-textarea').addEventListener('keyup', function (e) {
     e.preventDefault()
     document.getElementById('req-textarea').innerHTML = '*';
 })
